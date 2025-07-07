@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water | Change Starts With Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #FFC907;
+      --blue: #2E9DF7;
+      --light-blue: #8BD1CB;
+      --green: #4FCB53;
+      --orange: #FF902A;
+      --red: #F5402C;
+      --dark-green: #159A48;
+      --pink: #F16061;
+      --font-main: 'Work Sans', sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      color: #222;
+      background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--yellow);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      align-items: center;
+      padding: 4rem 2rem;
+      background: url('https://www.charitywater.org/static/8cd48ac11c5cdcb8dba518cd0c59d234/1e400/uganda-boy.jpg') center/cover no-repeat;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      max-width: 600px;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--yellow);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-btn {
+      background: var(--orange);
+      color: white;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: #e67f1f;
+    }
+
+    .impact {
+      padding: 4rem 2rem;
+      background: #fff;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .impact h2 {
+      font-size: 2rem;
+      color: var(--dark-green);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .impact-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card p {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #222;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">charity: water</div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Get Involved</a>
+      <a href="#">Donate</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>CHANGE STARTS WITH US</h1>
+      <p>You want your life to matter. So do we. Right now, millions don't have clean water. But we believe change starts with people like you — bold, driven, and eager to make a difference.</p>
+      <a href="#" class="cta-btn">Donate Now</a>
+    </div>
+  </section>
+
+  <section class="impact">
+    <h2>Real People. Real Change.</h2>
+    <div class="impact-cards">
+      <div class="card">
+        <img src="https://www.charitywater.org/static/1f5e5ec6bb30ee4decd7d05d5cb9ef90/ba2ff/kenya-kids.jpg" alt="Child with clean water">
+        <p>"Now we can drink safely and go to school every day."</p>
+      </div>
+      <div class="card">
+        <img src="https://www.charitywater.org/static/541e2e2ae5697703eb0ab16c8137c313/ba2ff/ethiopia-well.jpg" alt="Village with water access">
+        <p>"Our whole village has fresh water—thanks to donors like you."</p>
+      </div>
+      <div class="card">
+        <img src="https://www.charitywater.org/static/f1d7eb8b06e982d5805a5ff0a1a14a53/ba2ff/nepal-celebration.jpg" alt="Well being used">
+        <p>"This well changed everything. We are healthier and stronger."</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Charity: Water. All rights reserved.</p>
+  </footer>
+</body>
+</html>
